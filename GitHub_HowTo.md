@@ -5,12 +5,15 @@ Dazu muss das Git-Packet auf dem Rechner installiert sein, d.h. in der Console m
 
 Die md-Syntax (GitHub-Text-Format): https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
+FÜr den Anfang sehr gute Intro auf Deutsch:
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
 ### Git-Repo auf den Recher ziehen ###
 ```
 git clone REPO-URL PFAD
 ```
 
--> am besten man navigiert zunächst in den richtigen Ordner um nicht jedes mal
+- am besten man navigiert zunächst in den richtigen Ordner um nicht jedes mal
 den Pfad angeben zu müssen, sondern einfach nur einen Punkt "." anzugeben
 (=in diesem Ordner).
 
