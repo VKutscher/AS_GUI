@@ -5,7 +5,7 @@ Dazu muss das Git-Packet auf dem Rechner installiert sein, d.h. in der Console m
 
 Die md-Syntax (GitHub-Text-Format): https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
-FÜr den Anfang sehr gute Intro auf Deutsch:
+Für den Anfang sehr gutes Intro auf Deutsch:
 https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
 ### Git-Repo auf den Recher ziehen ###
@@ -28,7 +28,7 @@ git add .
 ```
 ### Änderungen Commiten (Einchecken) ###
 ```
-git commit -a -m "Commit-Message"
+git commit -a -m "COMMIT-MESSAGE"
 ```
 - wobei -a für "Alles" und -m für "Message" steht. Es muss immer eine Message vorhanden sein
 
