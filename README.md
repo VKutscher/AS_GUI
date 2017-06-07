@@ -28,23 +28,21 @@ Im Folgenden kurz die verwendeten Pakete und Funktionen, die zum Einsatz kamen.
 Virtualenv ist die Lösung vieler Probleme mit Python (und Flask). Da Python häufig Probleme bereitet, was unterschiedliche Versionnen von Python angeht, wird Virtualenv verwendet. Dieses Werkzeug ermöglicht die Erstellung einer isolierten Umgebung, in die man nur diejenigen Pakete hereinlädt, die vom Projekt benötigt werden.
 Alternativ können die Pakete auch global installiert werden, allerdings wurden hier keine guten Erfahrungen gemacht.
 
-Installation
-============
+#### Installation
 ```
 sudo pip install virtualenv
 ```
-Einrichtung
-===========
+#### Einrichtung
 ```
 mkdir PROJEKTNAME
 cd PROJEKTNAME
 virtualenv ENV_NAME
 ```
-Aktivierung
-============
+#### Aktivierung
+```
 . ENV_NAME/bin/activate
-Deaktivierung
-=============
+```
+#### Deaktivierung
 ```
 deactivate
 ```
