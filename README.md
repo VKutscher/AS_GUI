@@ -8,7 +8,7 @@ Eine GUI für die AS.
 
 <a name="struktur"/>
 ## Struktur des Projektes
-
+</a>
 Der Wunsch des Erbauers ist es, ein AS_GUI zu schaffen, welche konsistent, einfach zu verstehen und erweiterbar ist, sodass jeder andere in das Projekt reinfinden kann. Die HTMLs sollten sich in grenzen halten, sodass hier nicht weiter unterteilt wird.
 
 - scripts/
