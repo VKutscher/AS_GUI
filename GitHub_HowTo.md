@@ -3,9 +3,10 @@ Hier eine kurze Anleitung und Gedächtnisstütze mit den wichtigsten Befehlen.
 - Dazu muss das Git-Packet auf dem Rechner installiert sein, d.h. in der Console müssen die Git-Befehle ausgeführt werden können.
 
 ### Git-Repo auf den Recher ziehen ###
-´´´
+```
 git clone REPO-URL PFAD
-´´´
+```
+
 -> am besten man navigiert zunächst in den richtigen Ordner um nicht jedes mal
 den Pfad angeben zu müssen, sondern einfach nur einen Punkt "." anzugeben
 (=in diesem Ordner).
