@@ -1,2 +1,2 @@
 # AS_GUI
-Eine GUI für die AS 
+Eine GUI für die AS.
