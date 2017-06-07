@@ -3,6 +3,8 @@ Eine GUI für die AS.
 
 ## Inhaltsverzeichnis
 
+<!-- Zur Erstellung des Inhaltsverzeichnises wird ein kleines Workaround verwendet, indem vor die Überschriften jeweils eine Referenz (<a name="blabla"/>)mit anschließendem Linebreak </br> gesetzt wird und im Inhaltsverzeichnis selbst daraf verwiesen wird -->
+
 [Struktur](#struktur)</br>
 [Pakete](#pakete)
 
@@ -17,25 +19,52 @@ Der Wunsch des Erbauers ist es, ein AS_GUI zu schaffen, welche konsistent, einfa
 - images/
 - fonts/
 
-<a name="pakete"/>
+<a name="pakete"/></br>
 ## Verwendete Pakete
 Im Folgenden kurz die verwendeten Pakete und Funktionen, die zum Einsatz kamen.
+
+### Virtualenv
+
+Virtualenv ist die Lösung vieler Probleme mit Python (und Flask). Da Python häufig Probleme bereitet, was unterschiedliche Versionnen von Python angeht, wird Virtualenv verwendet. Dieses Werkzeug ermöglicht die Erstellung einer isolierten Umgebung, in die man nur diejenigen Pakete hereinlädt, die vom Projekt benötigt werden.
+Alternativ können die Pakete auch global installiert werden, allerdings wurden hier keine guten Erfahrungen gemacht.
+
+Installation
+============
+```
+sudo pip install virtualenv
+```
+Einrichtung
+===========
+```
+mkdir PROJEKTNAME
+cd PROJEKTNAME
+virtualenv ENV_NAME
+```
+Aktivierung
+============
+. ENV_NAME/bin/activate
+Deaktivierung
+=============
+```
+deactivate
+```
 
 ### Flask
 
 > Flask ist ein in Python geschriebenes Webframework. Der Fokus von Flask liegt auf Erweiterbarkeit und guter Dokumentation. Die einzigen Abhängigkeiten sind Jinja2, eine Template Engine, und Werkzeug, eine Bibliothek zum Erstellen von WSGI-Anwendungen. - de.wikipedia.org
 
-Also auch wenn viele andere fancy Webframeworks existieren, wird hier, in der Hoffnung dass es den Umgang mit dem Python-Code der Schale erleichtert,  Flask verwendet.
+Also auch wenn viele andere fancy Webframeworks existieren, wird hier, in der Hoffnung dass es den Umgang mit dem Python-Code der Schale erleichtert,  Flask verwendet. Um sich in Flask einzuarbeiten, werden Tutorials auf: http://flask.pocoo.org/docs/0.12/ absolviert.
+Flask verwendet per default die Python2 Version.
 
-### Jinja2 ###
+### Jinja2
 
-### Werkzeug ###
+### Werkzeug
 
-### Node.js ###
+### Node.js
 
 > Node.js ist eine serverseitige Plattform in der Softwareentwicklung zum Betrieb von Netzwerkanwendungen. Insbesondere lassen sich Webserver damit realisieren. Node.js wird in der JavaScript-Laufzeitumgebung „V8“ ausgeführt, die ursprünglich für Google Chrome entwickelt wurde, und bietet daher eine ressourcensparende Architektur, die eine besonders große Anzahl gleichzeitig bestehender Netzwerkverbindungen ermöglicht. - de.wikipedia.org
 
-### Bootstrap ###
+### Bootstrap
 Bootstrap ist ein Front-End-Framework für eine einfache und schnelle Entwicklung von Web-Seiten. Es beinhaltet HTML und CSS-basierende Navigationen, Formen, Buttons, Tabellen, Naviagation, Bilder und vieles mehr. Außerdem emöglicht es das sog. "Responsive Web Design", also Webseiten welche auf allen Geräten gut aussehen.
 
 Quellen:  Englisch: http://getbootstrap.com
@@ -43,9 +72,9 @@ Quellen:  Englisch: http://getbootstrap.com
 
 
 
-## Design ##
+## Design
 
-### Farben ###
+### Farben
 
 Bei den Farben habe ich mich an die TU Corrporate Design Farben im allgemeinen und an die blaue Dik Farbe (#004E8A) speziell gehalten.
 
