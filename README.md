@@ -12,12 +12,17 @@ Der Wunsch des Erbauers ist es, ein AS_GUI zu schaffen, welche konsist, einfach 
 - fonts/
 
 ## Verwendete Pakete ##
-Im Folgenden kurz die verwendeten Pakete und Funktionen, welche zum Einsatz kamen.
+Im Folgenden kurz die verwendeten Pakete und Funktionen, die zum Einsatz kamen.
 
-### CSS ###
+### Node.js ###
+
+> Node.js ist eine serverseitige Plattform in der Softwareentwicklung zum Betrieb von Netzwerkanwendungen. Insbesondere lassen sich Webserver damit realisieren. Node.js wird in der JavaScript-Laufzeitumgebung „V8“ ausgeführt, die ursprünglich für Google Chrome entwickelt wurde, und bietet daher eine ressourcensparende Architektur, die eine besonders große Anzahl gleichzeitig bestehender Netzwerkverbindungen ermöglicht. - de.wikipedia.org
 
 ### Bootstrap ###
-Bootstrap ist ein Front-End-Framework für eine einfache und schnelle Entwicklung von Web-Seiten. Es beinhaltet HTML und CSS-basierende Navigationen, Formen, Buttons, Tabellen, Naviagation, Bilder und vieles mehr. Außerdem emöglicht es das sog. "Responsive Web Design", also Wegseiten welche auf allen Geräten gut aussehen.
+Bootstrap ist ein Front-End-Framework für eine einfache und schnelle Entwicklung von Web-Seiten. Es beinhaltet HTML und CSS-basierende Navigationen, Formen, Buttons, Tabellen, Naviagation, Bilder und vieles mehr. Außerdem emöglicht es das sog. "Responsive Web Design", also Webseiten welche auf allen Geräten gut aussehen.
+
+Quellen:  Englisch: http://getbootstrap.com
+          Deutsch: http://holdirbootstrap.de
 
 
 
