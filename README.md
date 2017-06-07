@@ -1,6 +1,11 @@
 # AS_GUI
 Eine GUI für die AS.
 
+## Inhaltsverzeichnis ##
+
+[Struktur](#struktur)
+
+<a name="struktur"/>
 ## Struktur des Projektes ##
 
 Der Wunsch des Erbauers ist es, ein AS_GUI zu schaffen, welche konsist, einfach zu verstehen und erweiterbar ist, sodass jeder andere in das Projekt reinfinden kann. Die HTMLs sollten sich in grenzen halten, sodass hier nicht weiter unterteilt wird.
@@ -13,6 +18,16 @@ Der Wunsch des Erbauers ist es, ein AS_GUI zu schaffen, welche konsist, einfach 
 
 ## Verwendete Pakete ##
 Im Folgenden kurz die verwendeten Pakete und Funktionen, die zum Einsatz kamen.
+
+### Flask ###
+
+> Flask ist ein in Python geschriebenes Webframework. Der Fokus von Flask liegt auf Erweiterbarkeit und guter Dokumentation. Die einzigen Abhängigkeiten sind Jinja2, eine Template Engine, und Werkzeug, eine Bibliothek zum Erstellen von WSGI-Anwendungen. - de.wikipedia.org
+
+Also auch wenn viele andere fancy Webframeworks existieren, wird hier, in der Hoffnung dass es den Umgang mit dem Python-Code der Schale erleichtert,  Flask verwendet.
+
+### Jinja2 ###
+
+### Werkzeug ###
 
 ### Node.js ###
 

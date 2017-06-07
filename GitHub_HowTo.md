@@ -1,7 +1,7 @@
 # HowToGit #
 
 Hier eine kurze Anleitung und Gedächtnisstütze mit den wichtigsten Befehlen.
-Dazu muss das Git-Packet auf dem Rechner installiert sein, d.h. in der Console müssen die Git-Befehle ausgeführt werden können.
+Dazu muss das Git-Packet auf dem Rechner installiert sein, d.h. in der Console müssen die Git-Befehle ausgeführt werden können. Man arbeitet also an dem Projekt und wenn der Tag rum ist und man möchte die Änderungen auf Git hochladen, dann führt man die entsprechenden Befehle aus. Beispielcode wurde auf OSX getestet.
 
 Die md-Syntax (GitHub-Text-Format): https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
