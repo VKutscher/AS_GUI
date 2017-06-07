@@ -18,6 +18,7 @@ Der Wunsch des Erbauers ist es, ein AS_GUI zu schaffen, welche konsistent, einfa
 - styles/
 - images/
 - fonts/
+- AS_GUI_env/
 
 <a name="pakete"/></br>
 ## Verwendete Pakete
@@ -42,6 +43,10 @@ virtualenv ENV_NAME
 ```
 . ENV_NAME/bin/activate
 ```
+#### Hinzufügen von Paketen
+```
+pip install PAKETNAME #(z.B.: Flask)
+```
 #### Deaktivierung
 ```
 deactivate
@@ -53,6 +58,21 @@ deactivate
 
 Also auch wenn viele andere fancy Webframeworks existieren, wird hier, in der Hoffnung dass es den Umgang mit dem Python-Code der Schale erleichtert,  Flask verwendet. Um sich in Flask einzuarbeiten, werden Tutorials auf: http://flask.pocoo.org/docs/0.12/ absolviert.
 Flask verwendet per default die Python2 Version.
+
+#### Lokalen Flask-Server starten
+- Wenn man sich für virtualenv entschieden hat, muss man an dieser Stelle zunächst in die jeweilige vistuelle Umgebung rein. Bei disem Beispiel heißt der Server: "flask_server.py".
+
+```
+export FLASK_APP=flask_server.py
+```
+- Festlegung einer sog. Umgebungsvariable, damit flask weiß, was es starten soll, wenn "flask run" ausgeführt wird.
+```
+flask run
+```
+- Serverstart. Lokale IP und Port werden angezeigt.
+### WSGI
+
+> Das Python Web Server Gateway Interface (WSGI) ist eine Schnittstellen-Spezifikation für die Programmiersprache Python, die eine Schnittstelle zwischen Webservern und Webframeworks bzw. Web Application Servern festlegt, um die Portabilität von Webanwendungen auf unterschiedlichen Webservern zu fördern. - de.wikipedia.org
 
 ### Jinja2
 
