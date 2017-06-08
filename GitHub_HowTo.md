@@ -38,3 +38,12 @@ git commit -a -m "COMMIT-MESSAGE"
 ```
 git push
 ```
+### Dateien und Ordner ignorieren ###
+Es scheint zu Problemen mit dem virtualenv beim hochladen auf Git zu kommen (Killed:9). Durch ignorieren der betreffenden Dateien/Ordner kann dies behoben werden, wenn diese Dateien nicht unbedingt notwendig ist.
+Vorgehen:
+- leere Datei unter dem Namen ".gitignore" im Projektordner erstellen
+- zu ignorierende Datei/Ordner eintragen: z.B.
+```
+venv/
+```
+- Der gesamte venv Ordner wird ignoriert
