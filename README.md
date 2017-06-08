@@ -11,16 +11,23 @@ Eine GUI für die AS.
 <a name="struktur"/></br>
 ## Struktur des Projektes
 
-Der Wunsch des Erbauers ist es, ein AS_GUI zu schaffen, welche konsistent, einfach zu verstehen und erweiterbar ist, sodass jeder andere in das Projekt reinfinden kann. Die HTMLs sollten sich in grenzen halten, sodass hier nicht weiter unterteilt wird.
+Der Wunsch des Erbauers ist es, ein AS_GUI zu schaffen, welche konsistent, einfach zu verstehen und erweiterbar ist, sodass jeder andere in das Projekt reinfinden kann.
 
-- scripts/
-    - scripts.js
-- styles/
-- images/
-- fonts/
-- AS_GUI_env/
+- .git
+- venv
+- static
+    - bootstrap
+- templates
+- as_gui_flask_server.py
 
-<a name="pakete"/></br>
+- Da das Projekt auf GitHub aufbewahrt wird, wird auutomatisch ein .git Ordner erstellt, der mit dem Projekt selbst zunächst nichts zutun hat.
+- Die Entwicklung findet in einer virtualenv statt, deshalb der venv-Ordner.
+- im static-Ordner werden diverse Packete für Style usw. gespeichert
+- Ein templates-Ordner für die html-Dateien ist erforderlich, da Flask automatisch dort sucht.
+
+
+
+<a name="pakete" />
 ## Verwendete Pakete
 Im Folgenden kurz die verwendeten Pakete und Funktionen, die zum Einsatz kamen.
 
@@ -70,6 +77,30 @@ export FLASK_APP=flask_server.py
 flask run
 ```
 - Serverstart. Lokale IP und Port werden angezeigt.
+
+#### Debug-Mode
+Um den Server während der Entwicklung nicht bei jeder Code-Änderung neu starten zu müssen, emfiehlt sich der Debug-Mode, der diese Aufgabe übernimmt. Der untenstehende Befehl wird vor dem Serverstart ausgeführt.
+```
+export FLASK_DEBUG=1
+flask run
+```
+
+#### Netzwerkweiter Server
+Um Allen aus dem Netzwerk den Zugriff auf den Server zu ermöglichen, muss folgendes dem "run"-Befehl angehängt werden:
+```
+flask run --host=0.0.0.0
+```
+>Hier ist u.U. Vorsicht geboten, da ein netzwerkweiter Server im Debug-Modus die Ausführung vom Python-Code auf dem Komputer ermöglicht.
+
+#### Importe
+Zum ganzheitlichen Verständnis sind an dieser Stelle die in Flask Verwendeten Importe kurz beschrieben..
+##### Flask
+
+##### url_for
+Dies wird verwendet, um bei Referenzierungen nicht jedesmal den vollen Pfad angeben zu müssen. url_for unterstütz einen dabei:
+url_for('Ordner', filename='pfad/zur/datei.css')
+
+
 ### WSGI
 
 > Das Python Web Server Gateway Interface (WSGI) ist eine Schnittstellen-Spezifikation für die Programmiersprache Python, die eine Schnittstelle zwischen Webservern und Webframeworks bzw. Web Application Servern festlegt, um die Portabilität von Webanwendungen auf unterschiedlichen Webservern zu fördern. - de.wikipedia.org
@@ -83,12 +114,12 @@ flask run
 > Node.js ist eine serverseitige Plattform in der Softwareentwicklung zum Betrieb von Netzwerkanwendungen. Insbesondere lassen sich Webserver damit realisieren. Node.js wird in der JavaScript-Laufzeitumgebung „V8“ ausgeführt, die ursprünglich für Google Chrome entwickelt wurde, und bietet daher eine ressourcensparende Architektur, die eine besonders große Anzahl gleichzeitig bestehender Netzwerkverbindungen ermöglicht. - de.wikipedia.org
 
 ### Bootstrap
-Bootstrap ist ein Front-End-Framework für eine einfache und schnelle Entwicklung von Web-Seiten. Es beinhaltet HTML und CSS-basierende Navigationen, Formen, Buttons, Tabellen, Naviagation, Bilder und vieles mehr. Außerdem emöglicht es das sog. "Responsive Web Design", also Webseiten welche auf allen Geräten gut aussehen.
+Bootstrap ist ein Front-End-Framework für eine einfache und schnelle Entwicklung von Web-Seiten. Es beinhaltet HTML und CSS-basierende Navigationen, Formen, Buttons, Tabellen, Naviagation, Bilder und vieles mehr. Diese Bausteine können verwendet werden, um schnell eine anschauliche Seite zu erstellen. Außerdem emöglicht es das sog. "Responsive Web Design", also Webseiten welche auf allen Geräten gut aussehen.
 
 Quellen:  Englisch: http://getbootstrap.com
           Deutsch: http://holdirbootstrap.de
 
-
+Um Bootstrap verfühbar zu machen, müssen  die heruntergeladenen Dateien (css, fonts, js) entsprechend in den static-Ordner der Web-Page kopiert werden und im der HTML-Datei, in der die Styles verwendet werden, auf die Styles verwiesen werden.
 
 ## Design
 
