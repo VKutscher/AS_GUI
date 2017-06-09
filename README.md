@@ -5,9 +5,12 @@ Eine GUI für die AS.
 
 <!-- Zur Erstellung des Inhaltsverzeichnises wird ein kleines Workaround verwendet, indem vor die Überschriften jeweils eine Referenz (<a name="blabla"/>)mit anschließendem Linebreak </br> gesetzt wird und im Inhaltsverzeichnis selbst daraf verwiesen wird -->
 
+[Git](#git)</br>
 [Struktur](#struktur)</br>
-[Pakete](#pakete)
+[Pakete](#pakete)</br>
+[Design](#design)</br>
 
+<a name="git"/></br>
 # HowToGit
 
 Hier eine kurze Anleitung und Gedächtnisstütze mit den wichtigsten Befehlen.
@@ -29,32 +32,32 @@ den Pfad angeben zu müssen, sondern einfach nur einen Punkt "." anzugeben
 (=in diesem Ordner).
 
 Git-Projekt initialisieren (wenn nicht geclont)
-================================================
+----------
 ```
 git init .
 ```
 Dateien hinzufügen
-==================
+----------
 - Auf dem Rechner neu erstellten Dateien werden nicht commitet und gepusht Wenn sie nicht vorher "hinzugefügt" wurden
 ```
 git add .
 ```
 Änderungen Commiten (Einchecken)
-================================
+--------------
 ```
 git commit -a -m "COMMIT-MESSAGE"
 ```
 - wobei -a für "Alles" und -m für "Message" steht. Es muss immer eine Message vorhanden sein
 
 Änderungen auf Git hochladen - Push
-====================================
+-------------
 
 - Wenn man sich im Ordner mit dem Git-Projekt befindet
 ```
 git push
 ```
 Dateien und Ordner ignorieren
-=============================
+---
 Es scheint zu Problemen mit dem virtualenv beim hochladen auf Git zu kommen (Killed:9). Durch ignorieren der betreffenden Dateien/Ordner kann dies behoben werden, wenn diese Dateien nicht unbedingt notwendig ist.
 Vorgehen:
 - leere Datei unter dem Namen ".gitignore" im Projektordner erstellen
@@ -97,29 +100,29 @@ Virtualenv ist die Lösung vieler Probleme mit Python (und Flask). Da Python hä
 Alternativ können die Pakete auch global installiert werden, allerdings wurden hier keine guten Erfahrungen gemacht.
 
 Installation
-============
+---
 ```
 sudo pip install virtualenv
 ```
 Einrichtung
-===========
+---
 ```
 mkdir PROJEKTNAME
 cd PROJEKTNAME
 virtualenv ENV_NAME    
 ```
 Aktivierung
-===========
+---
 ```
 . ENV_NAME/bin/activate
 ```
 Hinzufügen von Paketen
-======================
+---
 ```
 pip install PAKETNAME #(z.B.: Flask)
 ```
 Deaktivierung
-=============
+---
 ```
 deactivate
 ```
@@ -132,7 +135,7 @@ Also auch wenn viele andere fancy Webframeworks existieren, wird hier, in der Ho
 Flask verwendet per default die Python2 Version.
 
 Lokalen Flask-Server starten
-============================
+---
 - Wenn man sich für virtualenv entschieden hat, muss man an dieser Stelle zunächst in die jeweilige vistuelle Umgebung rein. Bei disem Beispiel heißt der Server: "flask_server.py".
 
 ```
@@ -145,7 +148,7 @@ flask run
 - Serverstart. Lokale IP und Port werden angezeigt.
 
 Debug-Mode
-==========
+---
 Um den Server während der Entwicklung nicht bei jeder Code-Änderung neu starten zu müssen, emfiehlt sich der Debug-Mode, der diese Aufgabe übernimmt. Der untenstehende Befehl wird vor dem Serverstart ausgeführt.
 ```
 export FLASK_DEBUG=1
@@ -153,7 +156,7 @@ flask run
 ```
 
 Netzwerkweiter Server
-=====================
+---
 Um Allen aus dem Netzwerk den Zugriff auf den Server zu ermöglichen, muss folgendes dem "run"-Befehl angehängt werden:
 ```
 flask run --host=0.0.0.0
@@ -166,7 +169,7 @@ Zum ganzheitlichen Verständnis sind an dieser Stelle die in Flask Verwendeten I
 Flask
 
 url_for
-=======
+---
 Dies wird verwendet, um bei Referenzierungen nicht jedesmal den vollen Pfad angeben zu müssen. url_for unterstütz einen dabei:
 url_for('Ordner', filename='pfad/zur/datei.css')
 
@@ -191,6 +194,7 @@ Quellen:  Englisch: http://getbootstrap.com
 
 Um Bootstrap verfühbar zu machen, müssen  die heruntergeladenen Dateien (css, fonts, js) entsprechend in den static-Ordner der Web-Page kopiert werden und im der HTML-Datei, in der die Styles verwendet werden, auf die Styles verwiesen werden.
 
+<a name="design"/></br>
 # Design
 
 ## Farben
