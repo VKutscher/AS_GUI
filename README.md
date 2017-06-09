@@ -19,7 +19,7 @@ Für den Anfang sehr gutes Intro auf Deutsch:
 https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
 Git-Repo auf den Recher ziehen
-==============================
+------------------------------
 ```
 git clone REPO-URL PFAD
 ```
