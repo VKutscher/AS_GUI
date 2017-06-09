@@ -1,0 +1,16 @@
+<!DOCTYPE literatur [
+
+<!ELEMENT literatur (buch)+>
+<!ELEMENT buch (autor, titel, datum, kommentar)>
+
+<!ATTLIST buch sprache (deutsch|englisch) #REQUIERED>
+
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT titel (#PCDATA)>
+<!ELEMENT datum (#PCDATA)>
+<!ELEMENT kommentar (#PCDATA)>
+
+<!ENTITY vk "Vladimir Kutscher">
+<!ENTITY kommentar SYSTEM "externe_datei.txt">
+
+]>

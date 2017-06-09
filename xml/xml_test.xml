@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <!DOCTYPE literatur SYSTEM "dtd_test.dtd"> -->
+
+<!DOCTYPE literatur [
+
+<!ELEMENT literatur (buch)+>
+<!ELEMENT buch (autor, titel, datum, kommentar)>
+
+
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT titel (#PCDATA)>
+<!ELEMENT datum ANY>
+<!ELEMENT kommentar (#PCDATA)>
+
+<!ENTITY vk "Vladimir Kutscher">
+<!ENTITY kommentar SYSTEM "externe_datei.txt">
+
+]>
+
+<literatur>
+  <buch>
+    <autor>vk</autor>
+    <titel>XML_Test</titel>
+    <datum>2017</datum>
+    <kommentar>kommentar</kommentar>
+  </buch>
+</literatur>
