@@ -171,8 +171,8 @@ Flask
 
 url_for
 ---
-Dies wird verwendet, um bei Referenzierungen nicht jedesmal den vollen Pfad angeben zu müssen. url_for unterstütz einen dabei:
-url_for('Ordner', filename='pfad/zur/datei.css')
+Diese (von Jinja2 ermöglichte) Funktion erlaubt die dynamische Referenzierung.
+{{ url_for('Ordner', filename='pfad/zur/datei.css') }}
 
 
 ## WSGI
@@ -194,6 +194,25 @@ Quellen:  Englisch: http://getbootstrap.com
           Deutsch: http://holdirbootstrap.de
 
 Um Bootstrap verfühbar zu machen, müssen  die heruntergeladenen Dateien (css, fonts, js) entsprechend in den static-Ordner der Web-Page kopiert werden und im der HTML-Datei, in der die Styles verwendet werden, auf die Styles verwiesen werden.
+
+
+# mySQL - Database
+
+
+Eine externe Datenbank nutzen
+www.pythonanywhere.com
+username: ASDatabase
+pass: as_database_password
+MySQL-pass. as_mysql_password
+
+MySQLdb auf dem Rechner installieren
+
+'''
+brew install mysql #zunächst mysql installieren
+'''
+'''
+pip install mysql-python  #mysql-python Schnittstelle installieren
+'''
 
 <a name="design"/></br>
 # Design
